@@ -6,7 +6,7 @@
 
 ## 🚀 Technologies Used
 *   **HTML5:** Semantic structure.
-*   **CSS3 / Tailwind CSS:** Responsive styling and layout.
+*   **CSS3:** Responsive styling and layout.
 *   **JavaScript:** Interactive elements (e.g., mobile menu, smooth scrolling).
 *   **FontAwesome:** Icons for visual enhancement.
 
