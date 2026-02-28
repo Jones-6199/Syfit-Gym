@@ -20,6 +20,6 @@
 ## 🛠️ Installation & Usage
 To run this project locally:
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
-  https://github.com/Jones-6199/Syfit-Gym
+   git clone https://github.com/Jones-6199/Syfit-Gym.git
