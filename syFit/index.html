@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syfit - Professional Fitness Center in Mila</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Outfit for EN, Cairo for AR -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Cairo:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Social Media Brand Icons (Google Icons doesn't usually have brands) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="logo-modified.png">
+   
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="logo-modified.png" alt="Syfit GYM Logo">
+            </a>
+            
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active" data-i18n="nav_home">Home</a>
+                <a href="#services" class="nav-link" data-i18n="nav_services">Services</a>
+                <a href="#programs" class="nav-link" data-i18n="nav_programs">Programs</a>
+                <a href="#results" class="nav-link" data-i18n="nav_results">Results</a>
+                <a href="#coach" class="nav-link" data-i18n="nav_coach">Coach</a>
+                <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+                <button id="lang-toggle" class="lang-toggle" aria-label="Switch Language">
+                    <span class="lang-text">AR</span>
+                </button>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <span class="material-symbols-outlined light-icon">light_mode</span>
+                    <span class="material-symbols-outlined dark-icon">dark_mode</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg">
+            <img src="cover2.png" alt="Gym Background">
+            <div class="overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h2 class="typing-hero"><span data-i18n="hero_we_are">Welcome to</span> <span class="text-gradient">SyFit GYM</span></h2>
+            <h2 class="animate-up delay-1" data-i18n="hero_subtitle">Transform your body and mind at Mila's premier fitness destination.</h2>
+            <div class="hero-btns animate-up delay-2">
+                <a href="#contact" class="btn btn-primary"><span data-i18n="hero_join">Join Now</span> <span class="material-symbols-outlined arrow-icon">arrow_forward</span></a>
+                <a href="#services" class="btn btn-outline"><span data-i18n="hero_explore">Explore Services</span> <span class="material-symbols-outlined">fitness_center</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Why Choose Us -->
+    <section class="section why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle" data-i18n="why_subtitle">Why Choose Us</span>
+                <h2><span data-i18n="why_title">Redefine Your Limits</span> <span class="material-symbols-outlined" style="vertical-align: middle; margin-left: 10px; color: var(--primary); font-size: 1.2em;">trending_up</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <span class="material-symbols-outlined">fitness_center</span>
+                    </div>
+                    <h3 data-i18n="feat_1_title">Top Equipment</h3>
+                    <p data-i18n="feat_1_desc">State-of-the-art machinery required for every muscle group.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <span class="material-symbols-outlined">groups</span>
+                    </div>
+                    <h3 data-i18n="feat_2_title">Expert Coaches</h3>
+                    <p data-i18n="feat_2_desc">Professional guidance to help you reach your maximum potential.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <span class="material-symbols-outlined">schedule</span>
+                    </div>
+                    <h3 data-i18n="feat_3_title">Flexible Time</h3>
+                    <p data-i18n="feat_3_desc">Open schedules that fit your busy lifestyle perfectly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle" data-i18n="services_subtitle">What We Offer</span>
+                <h2><span data-i18n="services_title">Our Premium Services</span> <span class="material-symbols-outlined" style="vertical-align: middle; margin-left: 10px; color: var(--primary); font-size: 1.2em;">star</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="bg-icon"><span class="material-symbols-outlined">person</span></div>
+                    <h3><span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px; color: var(--primary); font-size: 0.9em;">person</span><span data-i18n="serv_1_title">Personal Training</span></h3>
+                    <p data-i18n="serv_1_desc">One-on-one sessions tailored to your specific goals and needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="bg-icon"><span class="material-symbols-outlined">group</span></div>
+                    <h3><span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px; color: var(--primary); font-size: 0.9em;">group</span><span data-i18n="serv_2_title">Group Classes</span></h3>
+                    <p data-i18n="serv_2_desc">Energetic classes that keep you motivated and moving together.</p>
+                </div>
+                <div class="service-card">
+                    <div class="bg-icon"><span class="material-symbols-outlined">hardware</span></div>
+                    <h3><span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px; color: var(--primary); font-size: 0.9em;">fitness_center</span><span data-i18n="serv_3_title">Strength Training</span></h3>
+                    <p data-i18n="serv_3_desc">Build muscle and power with our extensive free weights area.</p>
+                </div>
+                <div class="service-card">
+                    <div class="bg-icon"><span class="material-symbols-outlined">monitor_heart</span></div>
+                    <h3><span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px; color: var(--primary); font-size: 0.9em;">favorite</span><span data-i18n="serv_4_title">Cardio Training</span></h3>
+                    <p data-i18n="serv_4_desc">Boost your endurance with advanced treadmills and bikes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="bg-icon"><span class="material-symbols-outlined">restaurant_menu</span></div>
+                    <h3><span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px; color: var(--primary); font-size: 0.9em;">restaurant_menu</span><span data-i18n="serv_5_title">Nutrition Coaching</span></h3>
+                    <p data-i18n="serv_5_desc">Personalized diet plans to fuel your workouts and recovery.</p>
+                </div>
+                <div class="service-card">
+                    <div class="bg-icon"><span class="material-symbols-outlined">workspace_premium</span></div>
+                    <h3><span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px; color: var(--primary); font-size: 0.9em;">workspace_premium</span><span data-i18n="serv_6_title">Specialized Programs</span></h3>
+                    <p data-i18n="serv_6_desc">Targeted routines for weight loss, muscle gain, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Carousel (Promotions) -->
+    <section id="programs" class="section promotions">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle" data-i18n="promo_subtitle">Exclusive Offers</span>
+                <h2><span data-i18n="promo_title">Active Promotions</span> <span class="material-symbols-outlined" style="vertical-align: middle; margin-left: 10px; color: var(--primary); font-size: 1.2em;">local_offer</span></h2>
+            </div>
+            <div class="slider-container" id="promo-slider">
+                <div class="slider-track">
+                    <div class="slide zoomed-trigger"><img src="promo.png" alt="Promotion 1"></div>
+                    <div class="slide zoomed-trigger"><img src="promotion2.png" alt="Promotion 2"></div>
+                    <div class="slide zoomed-trigger"><img src="promotion3.png" alt="Promotion 3"></div>
+                    <div class="slide zoomed-trigger"><img src="promotion.png" alt="Promotion 4"></div>
+                      <div class="slide zoomed-trigger"><img src="promoo.png" alt="Promotion 4"></div>
+                </div>
+                <button class="slider-btn prev" aria-label="Previous Slide"><span class="material-symbols-outlined arrow-icon">chevron_left</span></button>
+                <button class="slider-btn next" aria-label="Next Slide"><span class="material-symbols-outlined arrow-icon">chevron_right</span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Showcase Slider -->
+    <section class="section gallery-showcase">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle" data-i18n="gallery_subtitle">Weight Loss Challenge</span>
+                <h2><span data-i18n="gallery_title">Weight Loss Season 7</span> <span class="material-symbols-outlined" style="vertical-align: middle; margin-left: 10px; color: var(--primary); font-size: 1.2em;">fitness_center</span></h2>
+            </div>
+            <div class="slider-container" id="gallery-slider">
+                <div class="slider-track">
+                    <div class="slide zoomed-trigger"><img src="v1.png" alt="Gallery Image 1"></div>
+                    <div class="slide zoomed-trigger"><img src="v2.png" alt="Gallery Image 2"></div>
+                    <div class="slide zoomed-trigger"><img src="v3.png" alt="Gallery Image 3"></div>
+                    <div class="slide zoomed-trigger"><img src="v4.png" alt="Gallery Image 4"></div>
+                    <div class="slide zoomed-trigger"><img src="v5.png" alt="Gallery Image 5"></div>
+                    <div class="slide zoomed-trigger"><img src="v6.png" alt="Gallery Image 6"></div>
+                    <div class="slide zoomed-trigger"><img src="v7.png" alt="Gallery Image 7"></div>
+                </div>
+                <button class="slider-btn prev" aria-label="Previous Image"><span class="material-symbols-outlined arrow-icon">chevron_left</span></button>
+                <button class="slider-btn next" aria-label="Next Image"><span class="material-symbols-outlined arrow-icon">chevron_right</span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gender Programs -->
+    <section class="section gender-programs">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: var(--primary); "><span data-i18n="programs_title">Our Current Training Programs</span> <span class="material-symbols-outlined" style="vertical-align: middle; margin-left: 10px; font-size: 1.2em;">calendar_month</span></h2>
+            </div>
+            <div class="split-col">
+                <div class="program-banner zoomed-trigger">
+                    <img src="menprograme.png" alt="Men's Program" class="zoom-img">
+                    <div class="banner-content">
+                        <h3 data-i18n="prog_men_title">Men's Program</h3>
+                        <p data-i18n="prog_men_desc">Unlock strength and power. Click to view full program.</p>
+                    </div>
+                </div>
+                <div class="program-banner zoomed-trigger">
+                    <img src="womensprograme.png" alt="Women's Program" class="zoom-img">
+                    <div class="banner-content">
+                        <h3 data-i18n="prog_women_title">Women's Program</h3>
+                        <p data-i18n="prog_women_desc">Tone, sculpt, and empower. Click to view full program.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ramadan Program Section -->
+            <div class="section-header" style="margin-top: 80px;">
+                <h2 style="color: var(--primary);" ><span data-i18n="prog_ramadan_header">Ramadan 2026 Training Program Coming Soon ..</span> <span class="material-symbols-outlined" style="vertical-align: middle; margin-left: 10px; font-size: 1.2em;">calendar_month</span></h2>
+            </div>
+            <div class="program-banner zoomed-trigger" style="max-width: 800px; margin: 0 auto; height: 400px;">
+                <img src="ramadan.png" alt="Ramadan Fitness Program" class="zoom-img">
+                <div class="banner-content">
+                    <h3 data-i18n="prog_ramadan_title">Ramadan Special</h3>
+                    <p data-i18n="prog_ramadan_desc">Train smart, stay strong, and maintain your gains during the holy month.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results (Weight Loss) -->
+    <section id="results" class="section results">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle" data-i18n="results_subtitle">Real Results</span>
+                <h2><span data-i18n="results_title">Body Transformations</span> <span class="material-symbols-outlined" style="vertical-align: middle; margin-left: 10px; color: var(--primary); font-size: 1.2em;">fitness_center</span></h2>
+            </div>
+            <div class="slider-container" id="results-slider">
+                <div class="slider-track">
+                    <div class="slide zoomed-trigger"><img src="result.png" alt="Transformation 1"></div>
+                    <div class="slide zoomed-trigger"><img src="result2.png" alt="Transformation 2"></div>
+                    <div class="slide zoomed-trigger"><img src="result4.png" alt="Transformation 3"></div>
+                    <div class="slide zoomed-trigger"><img src="result5.png" alt="Transformation 4"></div>
+                    <div class="slide zoomed-trigger"><img src="resul6.png" alt="Transformation 5"></div>
+                    <div class="slide zoomed-trigger"><img src="result6.png" alt="Transformation 6"></div>
+                    <div class="slide zoomed-trigger"><img src="result7.png" alt="Transformation 7"></div>
+                    <div class="slide zoomed-trigger"><img src="result8.png" alt="Transformation 8"></div>
+                    <div class="slide zoomed-trigger"><img src="result9.png" alt="Transformation 9"></div> <div class="slide zoomed-trigger"><img src="onemore.png" alt="Transformation 9"></div>
+                     <div class="slide zoomed-trigger"><img src="twomore.png" alt="Transformation 9"></div>
+                     <div class="slide zoomed-trigger"><img src="three.png" alt="Transformation 9"></div>
+                      <div class="slide zoomed-trigger"><img src="four.png" alt="Transformation 9"></div>
+                    </div>
+                <button class="slider-btn prev" aria-label="Previous Transformation"><span class="material-symbols-outlined arrow-icon">chevron_left</span></button>
+                <button class="slider-btn next" aria-label="Next Transformation"><span class="material-symbols-outlined arrow-icon">chevron_right</span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coach Section -->
+    <section id="coach" class="section coach">
+        <div class="container">
+            <div class="coach-wrapper">
+                <div class="coach-image">
+                    <div class="img-frame">
+                        <img src="coachImage.png" alt="Coach SeifEddine Boutebdja">
+                    </div>
+                </div>
+                <div class="coach-info">
+                    <span class="role" data-i18n="coach_role">Head Coach</span>
+                    <h2><span data-i18n="coach_name">Seif Eddine Boutebdja</span> <span class="material-symbols-outlined" style="vertical-align: middle; margin-left: 10px; color: var(--primary); font-size: 0.8em;">verified</span></h2>
+                    <p class="bio" data-i18n="coach_bio">
+                        Professional Bodybuilding Coach and Physical Education Teacher (Middle School). Specializing in men's and children's fitness, SeifEddine brings years of experience and passion to help you achieve your personal best. Whether you are a beginner or an athlete, his guidance ensures results.
+                    </p>
+                    <ul class="specs">
+                        <li><span class="material-symbols-outlined">check_circle</span> <span data-i18n="coach_spec_1">Personal Training</span></li>
+                        <li><span class="material-symbols-outlined">check_circle</span> <span data-i18n="coach_spec_2">Athlete Conditioning</span></li>
+                        <li><span class="material-symbols-outlined">check_circle</span> <span data-i18n="coach_spec_3">Pediatric Fitness</span></li>
+                    </ul>
+                    <div class="social-links">
+                        <a target="_blank" href="https://www.facebook.com/SyFitMila/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/syfit1/?hl=en" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://x.com/syfit1" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="tel:+213657178791" aria-label="Call Coach"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Monthly Challenge Info -->
+    <section class="section weekly-challenge">
+        <div class="container">
+            <div class="challenge-wrapper">
+                 <div class="challenge-content">
+                    <span class="subtitle" data-i18n="challenge_subtitle">Push Your Limits</span>
+                    <h2 data-i18n="challenge_title">Monthly Weight Loss Challenge</h2>
+                    <p data-i18n="challenge_desc">Join our exclusive monthly challenge led by Head Coach Seif Eddine. Every month, we push our community to achieve incredible weight loss results, win prizes, and transform their lives together. Are you ready to be the next champion?</p>
+                    <a href="#contact" class="btn btn-primary" data-i18n="challenge_btn">Join The Challenge</a>
+                 </div>
+                 <div class="challenge-image zoomed-trigger">
+                    <img src="chalenge.png" alt="Monthly Challenge">
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monthly Challenge Winners -->
+    <section class="section winners">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle" data-i18n="winners_subtitle">Hall of Fame</span>
+                <h2><span data-i18n="winners_title">Monthly Challenge Awards</span> <span class="material-symbols-outlined" style="vertical-align: middle; margin-left: 10px; color: var(--primary); font-size: 1.2em;">emoji_events</span></h2>
+            </div>
+            <div class="slider-container" id="winners-slider">
+                <div class="slider-track">
+                    <!-- Original Winners -->
+                    <div class="slide">
+                        <div class="winner-card zoomed-trigger" style="margin: 0 auto;">
+                            <img src="awards4.png" alt="Winner 1">
+                            <div class="ribbon" data-i18n="place_1">1st Place</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="winner-card zoomed-trigger" style="margin: 0 auto;">
+                            <img src="awards1.png" alt="Winner 2">
+                            <div class="ribbon" data-i18n="place_2">2nd Place</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="winner-card zoomed-trigger" style="margin: 0 auto;">
+                            <img src="awards3.png" alt="Winner 3">
+                            <div class="ribbon" data-i18n="place_3">3rd Place</div>
+                        </div>
+                    </div>
+                    <!-- New Challenge Images -->
+                    <div class="slide"><div class="winner-card zoomed-trigger" style="margin: 0 auto;"><img src="1.png" alt="Challenge 1"></div></div>
+                    <div class="slide"><div class="winner-card zoomed-trigger" style="margin: 0 auto;"><img src="2.png" alt="Challenge 2"></div></div>
+                    <div class="slide"><div class="winner-card zoomed-trigger" style="margin: 0 auto;"><img src="3.png" alt="Challenge 3"></div></div>
+                    <div class="slide"><div class="winner-card zoomed-trigger" style="margin: 0 auto;"><img src="4.png" alt="Challenge 4"></div></div>
+                    <div class="slide"><div class="winner-card zoomed-trigger" style="margin: 0 auto;"><img src="5.png" alt="Challenge 5"></div></div>
+                    <div class="slide"><div class="winner-card zoomed-trigger" style="margin: 0 auto;"><img src="6.png" alt="Challenge 6"></div></div>
+                    <div class="slide"><div class="winner-card zoomed-trigger" style="margin: 0 auto;"><img src="7.png" alt="Challenge 7"></div></div>
+                    <div class="slide"><div class="winner-card zoomed-trigger" style="margin: 0 auto;"><img src="8.png" alt="Challenge 8"></div></div>
+                    <div class="slide"><div class="winner-card zoomed-trigger" style="margin: 0 auto;"><img src="9.png" alt="Challenge 9"></div></div>
+                    <div class="slide"><div class="winner-card zoomed-trigger" style="margin: 0 auto;"><img src="10.png" alt="Challenge 10"></div></div>
+                </div>
+                <button class="slider-btn prev" aria-label="Previous Winner"><span class="material-symbols-outlined arrow-icon">chevron_left</span></button>
+                <button class="slider-btn next" aria-label="Next Winner"><span class="material-symbols-outlined arrow-icon">chevron_right</span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle" data-i18n="testi_subtitle">Testimonials</span>
+                <h2><span data-i18n="testi_title">Client Feedback</span> <span class="material-symbols-outlined" style="vertical-align: middle; margin-left: 10px; color: var(--primary); font-size: 1.2em;">sentiment_satisfied</span></h2>
+            </div>
+            <div class="slider-container" id="testimonial-slider">
+                <div class="slider-track">
+                    <!-- Slide 1 -->
+                    <div class="slide testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="mourad.png" alt="Mourad B." class="client-avatar">
+                                <div class="client-info">
+                                    <h4>Mourad B.</h4>
+                                    <span data-i18n="testi_1_prog">Weight Loss Program</span>
+                                </div>
+                                <div class="quote-icon"><span class="material-symbols-outlined">format_quote</span></div>
+                            </div>
+                            <p data-i18n="testi_1_text">"Excellent equipment and a great atmosphere. I've achieved my weight targets faster than I expected!"</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="mohamed.png" alt="Mohamed S." class="client-avatar">
+                                <div class="client-info">
+                                    <h4>Mohamed S.</h4>
+                                    <span data-i18n="testi_2_prog">Muscle Gain</span>
+                                </div>
+                                <div class="quote-icon"><span class="material-symbols-outlined">format_quote</span></div>
+                            </div>
+                            <p data-i18n="testi_2_text">"The coaches are very professional and always there to help. Highly recommend Syfit for everyone."</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="lamine.png" alt="Lamine M." class="client-avatar">
+                                <div class="client-info">
+                                    <h4>Lamine M.</h4>
+                                    <span data-i18n="testi_3_prog">Group Classes</span>
+                                </div>
+                                <div class="quote-icon"><span class="material-symbols-outlined">format_quote</span></div>
+                            </div>
+                            <p data-i18n="testi_3_text">"Clean gym, intense group classes, and amazing results. It's the best part of my day."</p>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="slide testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="moustapha.png" alt="Moustapha R." class="client-avatar">
+                                <div class="client-info">
+                                    <h4>Moustapha R.</h4>
+                                    <span data-i18n="testi_4_prog">Personal Training</span>
+                                </div>
+                                <div class="quote-icon"><span class="material-symbols-outlined">format_quote</span></div>
+                            </div>
+                            <p data-i18n="testi_4_text">"I lost 10kg in 3 months thanks to the personalized coaching. Thank you coach Seif!"</p>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="slide testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="Samir.png" alt="Samir B." class="client-avatar">
+                                <div class="client-info">
+                                    <h4>Samir B.</h4>
+                                    <span data-i18n="testi_5_prog">Athlete Training</span>
+                                </div>
+                                <div class="quote-icon"><span class="material-symbols-outlined">format_quote</span></div>
+                            </div>
+                            <p data-i18n="testi_5_text">"Top notch facilities in Mila. The nutrition plans really make a difference."</p>
+                        </div>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="slide testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="11.png" alt="Amina S." class="client-avatar">
+                                <div class="client-info">
+                                    <h4>Amina S.</h4>
+                                    <span data-i18n="testi_6_prog">Women's Fitness</span>
+                                </div>
+                                <div class="quote-icon"><span class="material-symbols-outlined">format_quote</span></div>
+                            </div>
+                            <p data-i18n="testi_6_text">"Coach Fatima is amazing! Her professionalism and guidance helped me feel comfortable and motivated."</p>
+                        </div>
+                    </div>
+                    <!-- Slide 7 -->
+                    <div class="slide testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="12.png" alt="Maroua F." class="client-avatar">
+                                <div class="client-info">
+                                    <h4>Maroua F.</h4>
+                                    <span data-i18n="testi_7_prog">Weight Loss</span>
+                                </div>
+                                <div class="quote-icon"><span class="material-symbols-outlined">format_quote</span></div>
+                            </div>
+                            <p data-i18n="testi_7_text">"I love the women-only environment. Thank you Coach Fatima for everything!"</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn prev" aria-label="Previous Review"><span class="material-symbols-outlined arrow-icon">chevron_left</span></button>
+                <button class="slider-btn next" aria-label="Next Review"><span class="material-symbols-outlined arrow-icon">chevron_right</span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2><span data-i18n="contact_title">Contact Us</span> <span class="material-symbols-outlined" style="vertical-align: middle; margin-left: 10px; color: var(--primary); font-size: 1.2em;">mail</span></h2>
+                    <p data-i18n="contact_desc">Ready to start your journey? Get in touch or visit us today on the map below.</p>
+                    
+                    <div class="info-item">
+                        <span class="material-symbols-outlined">location_on</span>
+                        <div>
+                            <h4 data-i18n="contact_loc">Location</h4>
+                            <p>Mila, Algeria</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="material-symbols-outlined">call</span>
+                        <div>
+                            <h4 data-i18n="contact_phone">Phone</h4>
+                            <p>+213 554102184</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="material-symbols-outlined">mail</span>
+                        <div>
+                            <h4 data-i18n="contact_email">Email</h4>
+                            <p>syfitmila@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="https://www.facebook.com/SyFitMila/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/syfit1/?hl=en" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.tiktok.com/@syfit1" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/213554102184" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a target="_blank" href="https://x.com/syfit1" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="tel:+213657178791" aria-label="Call Us"><i class="fas fa-phone"></i></a>
+                        <a target="_blank" href="https://www.threads.com/@syfit1" aria-label="Threads"><i class="fa-brands fa-threads"></i></a>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3209.7931325758823!2d6.264301176238039!3d36.43838456725218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f3d377665a8f0d%3A0xbb269726df5a22f3!2sCentre%20de%20remise%20en%20forme%20%22SyFit%22!5e0!3m2!1sen!2sdz!4v1767481119608!5m2!1sen!2sdz" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <img src="footerImage.png" alt="Syfit Logo" class="footer-logo">
+                <p data-i18n="footer_slogan">Your goal is our mission. Join the SyFit family today.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_links">Quick Links</h4>
+                <a href="#home" data-i18n="nav_home">Home</a>
+                <a href="#services" data-i18n="nav_services">Services</a>
+                <a href="#programs" data-i18n="nav_programs">Programs</a>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="nav_programs">Programs</h4>
+                <a href="#" data-i18n="prog_type_1">Weight Loss</a>
+                <a href="#" data-i18n="prog_type_2">Muscle Gain</a>
+                <a href="#" data-i18n="prog_type_3">Cardio</a>
+                <a href="#" data-i18n="prog_type_4">Personal Training</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2026 <span style="color: var(--primary);">SyFit</span> GYM. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
+                    <span class="separator">|</span>
+                    <a href="#" data-i18n="footer_terms">Terms of Service</a>
+                </div>
+                <div class="footer-crafted">
+                    <span data-i18n="footer_crafted">Crafted by</span> <a href="https://benzianeyounes.me/" target="_blank">Benziane Younes</a>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" aria-label="Scroll to Top">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
